@@ -8,8 +8,7 @@ def load_library (library_name)
     pp "Defined: #{index[0]}" 
     pp "American: #{index[1][0]}"
     pp "Japanese: #{index[1][1]}"
-    reorganized[index[0]][:get_meaning] = index[1][1]
-    reorganized[index[0]][:get_emoticon] = index[1][0]
+    reorganized[index[0]]= {:get_meaning => index[1][1], :get_emoticon => index[1][0]}
   end
   
   reorganized 
