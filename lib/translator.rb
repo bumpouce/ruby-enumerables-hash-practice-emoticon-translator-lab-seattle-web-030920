@@ -5,12 +5,10 @@ def load_library (library_name)
   
   base_data = YAML.load_file(library_name)
   base_data.collect do |index| 
-    pp "Defined: #{index[0]}" 
-    pp "American: #{index[1][0]}"
-    pp "Japanese: #{index[1][1]}"
     reorganized[index[0]]= {:get_meaning => index[1][1], :get_emoticon => index[1][0]}
   end
   
+  pp "Reorganized data: #{reorganized}"
   reorganized 
 end
 
