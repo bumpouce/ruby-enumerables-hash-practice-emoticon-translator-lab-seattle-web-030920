@@ -1,6 +1,7 @@
-require '.lib/'
+require './lib/emoticons.yml'
+
 def load_library (library_name)
-  require library_name
+  load_file(library_name)
 end
 
 def get_japanese_emoticon
