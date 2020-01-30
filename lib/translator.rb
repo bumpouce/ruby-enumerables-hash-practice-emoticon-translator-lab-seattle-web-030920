@@ -5,6 +5,7 @@ def load_library (library_name)
   base_data.collect do |index|
     pp "Index data: #{index}"
   end
+  base_data
 end
 
 def get_japanese_emoticon
