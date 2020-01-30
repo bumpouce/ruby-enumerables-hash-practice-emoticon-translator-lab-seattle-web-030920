@@ -2,7 +2,9 @@ require 'yaml'
 
 def load_library (library_name)
   base_data = YAML.load_file(library_name)
-  pp "Data is type: #{base_data.class}"
+  base_data.collect do |index|
+    pp "Index data: #{index}"
+  end
 end
 
 def get_japanese_emoticon
