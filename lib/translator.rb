@@ -4,7 +4,7 @@ def load_library (library_name)
   base_data = YAML.load_file(library_name)
   base_data.collect { |index| pp "Index: #{index}" }
   
-  reorganized = {:get_meaning => [], :}
+  reorganized = {:get_meaning => [], :get_emoticon => []}
   
 end
 
