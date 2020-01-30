@@ -5,7 +5,6 @@ def load_library (library_name)
   base_data.collect { |index| pp "Index: #{index}" }
   
   reorganized = {:get_meaning => [], :get_emoticon => []}
-  
 end
 
 def get_japanese_emoticon
