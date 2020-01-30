@@ -2,9 +2,6 @@ require 'yaml'
 
 def load_library (library_name)
   base_data = YAML.load_file(library_name)
-  base_data.collect do |index|
-    pp "Index data: #{index}"
-  end
   base_data
 end
 
