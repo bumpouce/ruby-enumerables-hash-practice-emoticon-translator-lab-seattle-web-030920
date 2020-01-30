@@ -1,7 +1,6 @@
-# require modules here
 
-def load_library
-  # code goes here
+def load_library (library_name)
+  require library_name
 end
 
 def get_japanese_emoticon
